@@ -1,1 +1,192 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario - CHC REPORTES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manual de Usuario de CHC REPORTES</h1>
+        <p>Última actualización: 1 de Noviembre del 2024</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Pasos para el Usuario</h2>
+            
+            <ol>
+                <li>
+                    <h3>Iniciar la Aplicación (Con Permisos de Administrador)</h3>
+                    <p>Inicie la aplicación con permisos de administrador para evitar limitaciones que puedan afectar su funcionalidad.</p>
+                </li>
+
+                <li>
+                    <h3>Seleccionar Proveedor de Dominio</h3>
+                    <p>Al iniciar la aplicación por primera vez, se abrirá una ventana donde podrá iniciar sesión con sus credenciales de Microsoft o Google según su preferencia. El correo ingresado será utilizado para enviar los correos electrónicos con los archivos adjuntos.</p>
+                    <ul>
+                        <li>Una vez iniciada la sesión, aparecerá una ventana de confirmación que indicará si su cuenta fue autenticada exitosamente.</li>
+                        <li>Puede cerrar la ventana y continuar al siguiente paso.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h3>Conectar con SharePoint</h3>
+                    <p>Después de autenticar su cuenta personal u organizacional, deberá configurar su cuenta de SharePoint.</p>
+                    <ul>
+                        <li>La cuenta debe tener acceso directo al archivo fuente donde se obtendrán los datos de los clientes.</li>
+                        <li>Al ingresar sus credenciales correctamente, aparecerá una ventana de confirmación.</li>
+                        <li>Puede cerrar la ventana y continuar.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h3>Registrar Clientes</h3>
+                    <p>Antes de generar los reportes, es necesario registrar los clientes en la base de datos.</p>
+                    <ul>
+                        <li>Vaya al menú superior y seleccione <strong>'Gestión' &gt; 'Gestor de clientes'</strong>.</li>
+                        <li>Se abrirá una ventana con las herramientas necesarias para administrar sus clientes.</li>
+                    </ul>
+
+                    <h4>4.1 Clientes y Alias</h4>
+                    <ul>
+                        <li>En la pestaña <strong>'Todos los clientes'</strong>, haga clic en <strong>'Añadir cliente'</strong>.</li>
+                        <li>Complete el formulario con el nombre personalizado del cliente y el correo electrónico donde recibirá sus reportes.</li>
+                        <li>Agregue un alias correspondiente a la columna <strong>'Consignee'</strong> del archivo fuente para filtrar los datos del cliente específico.</li>
+                        <li><strong>Nota:</strong> Puede agregar múltiples alias que se incluirán juntos en el archivo de Excel del cliente.</li>
+                        <li>Una vez guardado el cliente, puede continuar con el siguiente paso.</li>
+                    </ul>
+
+                    <h4>4.2 Listas de Clientes</h4>
+                    <ul>
+                        <li>En la pestaña <strong>'Por Lista'</strong>, haga clic en <strong>'Crear Lista'</strong> y asigne un nombre a la lista, por ejemplo, <em>'Favoritos'</em>.</li>
+                        <li>Seleccione la lista creada en el desplegable <strong>'Seleccionar lista'</strong>.</li>
+                        <li>Agregue los clientes directamente a esta lista.</li>
+                        <li><strong>Nota:</strong> Los clientes añadidos a esta lista aparecerán en <strong>'Todos los clientes'</strong>, lo que permitirá agregarlos a otras listas en el futuro.</li>
+                        <li>Para eliminar un cliente de una lista, selecciónelo y haga clic en <strong>'Eliminar de lista'</strong>. Luego, puede reasignarlo a la lista correcta desde <strong>'Todos los clientes'</strong>.</li>
+                        <li><strong>Nota Importante:</strong> Eliminar un cliente con la opción <strong>'Eliminar cliente'</strong> lo removerá de todas las listas y de la base de datos de forma irreversible. Deberá registrar el cliente nuevamente si lo elimina.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h3>Generar Reportes</h3>
+                    <p>Con los clientes registrados, diríjase a la ventana principal y haga clic en <strong>'Generar Reportes'</strong>.</p>
+                    <ul>
+                        <li>Este proceso descargará el archivo Excel desde SharePoint, actualizará la información con los datos más recientes y filtrará los datos por cliente, generando documentos Excel individuales para cada uno.</li>
+                        <li>Al finalizar, aparecerá el mensaje <em>"Reportes generados!"</em></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h3>Enviar Reportes</h3>
+                    <p>Si la generación de reportes fue exitosa, puede proceder a enviarlos.</p>
+                    <ul>
+                        <li>Haga clic en <strong>'Enviar Correos'</strong>.</li>
+                        <li>Seleccione la lista de clientes a los que desea enviar los reportes y confirme la acción.</li>
+                        <li>Espere a que se envíen los correos y verifique que aparezca el mensaje <em>"Reportes enviados exitosamente!"</em></li>
+                        <li>¡Listo! El flujo del programa habrá finalizado.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <section>
+                <h2>Notas Importantes</h2>
+                <p><strong>Cada vez que registre un nuevo cliente, debe generar los reportes nuevamente antes de enviarlos.</strong></p>
+            </section>
+
+            <section>
+                <h2>Respaldo de Clientes</h2>
+                <ol start="7">
+                    <li>
+                        <h3>Exportar Clientes</h3>
+                        <p>Para mantener una copia de seguridad de la base de datos de clientes:</p>
+                        <ul>
+                            <li>Vaya a <strong>'Gestión' &gt; 'Exportar clientes (JSON)'</strong>.</li>
+                            <li>Seleccione la ruta y el nombre para guardar el respaldo, por ejemplo, <em>'Respaldo_Clientes.json'</em>.</li>
+                            <li>Guarde el archivo en un lugar seguro para futuras recuperaciones.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Importar Clientes</h3>
+                        <p>Para importar una base de datos de clientes existente:</p>
+                        <ul>
+                            <li>Vaya a <strong>'Gestión' &gt; 'Importar Clientes (JSON)'</strong>.</li>
+                            <li>Seleccione el archivo de respaldo y espere a que la carga finalice.</li>
+                            <li><strong>Nota:</strong> Si existen clientes con el mismo nombre o alias, el programa fusionará los registros para evitar duplicados. Se recomienda realizar un respaldo antes de importar una nueva base de datos.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Administrar Clientes y Listas</h2>
+                <ol start="8">
+                    <li>
+                        <h3>Clientes y Alias</h3>
+                        <p>En <strong>'Gestión' &gt; 'Gestor de clientes'</strong>, encontrará opciones como <strong>'Añadir clientes'</strong>, <strong>'Modificar Cliente'</strong>, <strong>'Borrar cliente'</strong>, <strong>'Añadir alias'</strong> y <strong>'Borrar alias'</strong> para mantener el control y orden de su base de datos. Estas opciones están disponibles en las pestañas <strong>'Por Lista'</strong> y <strong>'Todos los clientes'</strong>.</p>
+                    </li>
+
+                    <li>
+                        <h3>Listas</h3>
+                        <p>En la misma ventana, podrá gestionar listas de clientes con opciones como <strong>'Crear Lista'</strong>, <strong>'Eliminar Lista'</strong>, <strong>'Añadir a lista'</strong> y <strong>'Eliminar de lista'</strong>. Estas opciones están disponibles en las pestañas <strong>'Por Lista'</strong> y <strong>'Todos los clientes'</strong> (excepto <strong>'Eliminar de Lista'</strong> en esta última).</p>
+                    </li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Configuración de Cuentas</h2>
+                <ol start="9">
+                    <li>
+                        <h3>Cuenta de Origen para Envío de Correos</h3>
+                        <p>Para cambiar la cuenta desde la cual se envían los correos:</p>
+                        <ul>
+                            <li>Vaya a <strong>'Configuración' &gt; 'Cambiar correo de origen'</strong>.</li>
+                            <li>En la ventana de configuración, haga clic en <strong>'Cerrar sesión'</strong> si ya tiene una cuenta autenticada.</li>
+                            <li>Repita los pasos del punto 2 de este manual.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Cuenta de SharePoint</h3>
+                        <p>Para cambiar la cuenta de SharePoint:</p>
+                        <ul>
+                            <li>Vaya a <strong>'Configuración' &gt; 'Cambiar cuenta de SharePoint'</strong>.</li>
+                            <li>Ingrese las nuevas credenciales y guárdelas.</li>
+                            <li>Verifique que aparezca una ventana de confirmación si las credenciales son correctas.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Información Importante</h2>
+                <ol start="10">
+                    <li>
+                        <h3>Políticas de Privacidad y Términos de Uso</h3>
+                        <p>Para consultar las políticas y términos de uso de esta aplicación:</p>
+                        <ul>
+                            <li>Vaya a <strong>'Ayuda' &gt; 'Acerca de'</strong>.</li>
+                            <li>Haga clic en <strong>'Políticas de privacidad y Términos de uso'</strong> para visualizar los documentos correspondientes.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>Manual de Usuario</h3>
+                        <p>En la misma ventana de <strong>'Acerca de'</strong>, encontrará la opción <strong>'Manual de usuario'</strong>, donde podrá consultar este documento cuando lo desee.</p>
+                    </li>
+                </ol>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CHC-Consultores. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
