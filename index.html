@@ -31,8 +31,9 @@
                     <p>Al iniciar la aplicación por primera vez, se abrirá una ventana donde podrá iniciar sesión con sus credenciales de Microsoft o Google según su preferencia. El correo ingresado será utilizado para enviar los correos electrónicos con los archivos adjuntos.</p>
                     <img src="images/2.png" alt="Ventana de selección de proveedor de dominio" class="step-image">
                     <ul>
-                        <li>Una vez iniciada la sesión, aparecerá una ventana de confirmación que indicará si su cuenta fue autenticada exitosamente.</li>
+                        <li>Debe seleccionar la cuenta con la que desea envíar los correos.</li>
                         <img src="images/3.png" alt="Ventana de confirmación de autenticación" class="step-image">
+                        <li>Una vez iniciada la sesión, aparecerá una ventana de confirmación que indicará si su cuenta fue autenticada exitosamente.</li>
                         <img src="images/4.png" alt="Ventana de confirmacion de autenticación" class="step-image">
                         <li>Puede cerrar la ventana y continuar al siguiente paso.</li>
                     </ul>
@@ -40,12 +41,12 @@
 
                 <li>
                     <h3>Conectar con SharePoint</h3>
-                    <p>Después de autenticar su cuenta personal u organizacional, deberá configurar su cuenta de SharePoint.</p>
+                    <p>Después de autenticar su cuenta personal u organizacional, deberá configurar su cuenta de SharePoint en <strong>'Configuración' &gt; 'Cambiar correo de SharePoint'</strong>.</p>
                     <img src="images/5.png" alt="Configuración de cuenta de SharePoint" class="step-image">
-                    <img src="images/6.png" alt="Configuración de cuenta de SharePoint" class="step-image">
                     <ul>
-                        <li>La cuenta debe tener acceso directo al archivo fuente donde se obtendrán los datos de los clientes.</li>
-                        <li>Al ingresar sus credenciales correctamente, aparecerá una ventana de confirmación.</li>
+                        <li>Ingrese sus credenciales de SharePoint. La cuenta debe tener acceso directo al archivo fuente donde se obtendrán los datos de los clientes.</li>
+                        <img src="images/6.png" alt="Configuración de cuenta de SharePoint" class="step-image">
+                        <li>Al guardar sus credenciales, aparecerá una ventana de confirmación si las credenciales son válidas.</li>
                         <img src="images/7.png" alt="Confirmación de credenciales de SharePoint" class="step-image">
                         <li>Puede cerrar la ventana y continuar.</li>
                     </ul>
@@ -56,22 +57,29 @@
                     <p>Antes de generar los reportes, es necesario registrar los clientes en la base de datos.</p>
                     <ul>
                         <li>Vaya al menú superior y seleccione <strong>'Gestión' &gt; 'Gestor de clientes'</strong>.</li>
-                        <li>Se abrirá una ventana con las herramientas necesarias para administrar sus clientes.</li>
                         <img src="images/8.png" alt="Acceso al Gestor de Clientes" class="step-image">
+                        <li>Se abrirá una ventana con las herramientas necesarias para administrar sus clientes.</li>
                         <img src="images/9.png" alt="Acceso al Gestor de Clientes" class="step-image">
                     </ul>
 
                     <h4>4.1 Clientes y Alias</h4>
                     <ul>
                         <li>En la pestaña <strong>'Todos los clientes'</strong>, haga clic en <strong>'Añadir cliente'</strong>.</li>
-                        <li>Complete el formulario con el nombre personalizado del cliente y el correo electrónico donde recibirá sus reportes.</li>
                         <img src="images/10.png" alt="Agregar nuevo cliente" class="step-image">
                         <img src="images/11.png" alt="Formulario para añadir cliente" class="step-image">
+                        
+                        <li>Complete el formulario con el nombre personalizado del cliente y el correo electrónico donde recibirá sus reportes.</li>
                         <img src="images/12.png" alt="Formulario para añadir cliente" class="step-image">
                         <img src="images/13.png" alt="Formulario para añadir cliente" class="step-image">
-                        <li>Agregue un alias correspondiente a la columna <strong>'Consignee'</strong> del archivo fuente para filtrar los datos del cliente específico.</li>
-                        <img src="images/14.png" alt="Formulario para añadir alias" class="step-image">
+                        
+                        
+                        <li> <strong>Nota:</strong> el alias debe ser el mismo valor que se encuentraen la columna <strong>'Consignee'</strong> del archivo fuente para filtrar los datos del cliente específico.</li>
                         <img src="images/15.png" alt="Formulario para añadir cliente" class="step-image">
+                        
+                        <li>Seleccione el cliente y posteriormente seleccione la opcion <strong>'Añadir Alias'</strong> .</li>
+                        <img src="images/14.png" alt="Formulario para añadir alias" class="step-image">
+                        
+                        <li>Ingrese el alias que desea filtrar para el cliente seleccionado y ha click en <strong>'Guardar'</strong>.</li>
                         <img src="images/16.png" alt="Formulario para añadir cliente" class="step-image">
                         <li><strong>Nota:</strong> Puede agregar múltiples alias que se incluirán juntos en el archivo de Excel del cliente.</li>
                         <li>Una vez guardado el cliente, puede continuar con el siguiente paso.</li>
@@ -79,8 +87,10 @@
 
                     <h4>4.2 Listas de Clientes</h4>
                     <ul>
-                        <li>En la pestaña <strong>'Por Lista'</strong>, haga clic en <strong>'Crear Lista'</strong> y asigne un nombre a la lista, por ejemplo, <em>'Favoritos'</em>.</li>
+                        <li>En la pestaña <strong>'Por Lista'</strong>, haga clic en <strong>'Crear Lista'</strong>.</li>
                         <img src="images/17.png" alt="Seleccionar lista creada" class="step-image">
+
+                        <li>Asigne un nombre a la lista, por ejemplo, <em>'Favoritos'</em>.</li>
                         <img src="images/18.png" alt="Seleccionar lista creada" class="step-image">
                         
                         <li>Seleccione la lista creada en el desplegable <strong>'Seleccionar lista'</strong>.</li>
